@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Van filter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <img src="img/van.jpg" alt="van-image" id="van-img">
+        <ul>
+            <li><input type="button" value="normal" id="btnNormal" class="active btn"></li>
+            <li><input type="button" value="grayscale" id="btnGrayscale" class="btn"></li>
+            <li><input type="button" value="sepia" id="btnSepia" class="btn"></li>
+            <li><input type="button" value="hue" id="btnHue" class="btn"></li>
+            <li><input type="button" value="blur" id="btnBlur" class="btn"></li>
+        </ul>
+        <div class="range">
+            <label>opacity: <input type="range" min="0" max="1" value="1" step="0.01" id="opacity-slider"> <output id="range-value">100%</output></label>
+        </div>
+    </div>
+    <script src="js/filter.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+/*=================START CSS===================*/
+html {
+	font-size: 0.625em;  /* set 1 rem = 16px * 0.625 = 10px */
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Source Serif Pro', serif;
+}
+
+* {
+	box-sizing: border-box; /* width and height include paddings and borders */
+	margin: 0; /* wipe out browser differences */
+	padding: 0; /* wipe out browser differences */ 
+}
+
+img {
+    border: 0;
+}
+
+/*============================MAIN CONTENT===================*/
+.wrapper, img {
+    max-width: 80rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+li {
+    list-style: none;
+}
+
+li + li {
+    margin-left: 2.5rem;
+}
+
+li input {
+    border-radius: 0%;
+    padding: 0.7rem 1rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 300;
+    background-color: #e4e4e4;
+    border: 0.1rem solid #000;
+    transition: 250ms all ease-in-out;
+}
+
+li input:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.range {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+label {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+label input {
+    width: 35rem;
+}
+
+.filternormal {
+    filter: none;
+}
+
+.filtergrayscale {
+    filter: grayscale(100%);
+}
+
+.filtersepia {
+    filter: sepia(100%);
+}
+
+.filterhue {
+    filter: hue-rotate(90deg);
+}
+
+.filterblur {
+    filter: blur(3px);
+}
+
+.active {
+    background-color: #000;
+    color: #fff;
+}
+
+
+/*================================MEDIA QUERY RESPONSIVE========================*/
+@media (max-width: 50em){
+    .wrapper, img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 31.25em){
+    ul {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    li + li {
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+
+    label {
+        font-size: 1.2rem;
+    }
+
+    label input {
+        width: 50%;
+    }
+}
+
+@media (max-width: 31.25em) and (min-width: 21.88em){
+    li input {
+        padding: 0.6rem 0.8rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 21.88em){
+    li input {
+        padding: 0.6rem 0.8rem;
+        font-size: 1.1rem;
+    }
+
+    li + li {
+        margin-left: 0;
+        margin-top: 1.2rem;
+    }
+
+    ul {
+        margin-bottom: 2rem;
+    }
+}
