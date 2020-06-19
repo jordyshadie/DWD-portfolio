@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Goonery</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/goonery.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+		<div>
+			<h1><a href="">GOONERY</a></h1>
+		</div> 
+	</header>
+
+	<main>
+		<div class="wrapper">
+			<div class="goonery">
+				<h2>Rules</h2>
+				<p>The intention is to always find a pair of 2 cards that are upside down. If you find a card, do not forget where you saw it, because if you do not find the pair immediately, the cards are reversed.</p>
+				<p>To win you must find all the cards. Pay attention! There is a time limit, Have Fun!</p>
+				<button id="new">New Game</button>
+				<button id="start">Start</button>
+				<div class="timer">40 sec left</div>
+				<div id="status"></div>
+			</div>
+
+			<div class="game" id="spel">
+				<div class="rooster_afbeeldingen">
+
+					<div class="rij">
+						<div class="rooster">
+							<div class="kaart" data-what="ceballos">
+								<div class="kaart-in">
+									<div class="kaart-front">
+										<img src="../img/arsenal-goonery.jpg">
+									</div>
+									<div class="kaart-back">
+										<img src="../img/ceballos1.jpg" alt="ceballos">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="rooster">
+							<div class="kaart" data-what="aubameyang">
+								<div class="kaart-in">
+									<div class="kaart-front">
+										<img src="../img/arsenal-goonery.jpg">
+									</div>
+									<div class="kaart-back">
+										<img src="../img/aubameyang1.jpg" alt="aubameyang">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="rooster">
+							<div class="kaart" data-what="lacazette">
+								<div class="kaart-in">
+									<div class="kaart-front">
+										<img src="../img/arsenal-goonery.jpg">
+									</div>
+									<div class="kaart-back">
+										<img src="../img/lacazette1.jpg" alt="lacazette">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="rooster">
+							<div class="kaart" data-what="luiz">
+								<div class="kaart-in">
+									<div class="kaart-front">
+										<img src="../img/arsenal-goonery.jpg">
+									</div>
+									<div class="kaart-back">
+										<img src="../img/luiz1.jpg" alt="luiz">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+						<div class="rij">
+							<div class="rooster">
+								<div class="kaart" data-what="ozil">
+									<div class="kaart-in">
+										<div class="kaart-front">
+											<img src="../img/arsenal-goonery.jpg">
+										</div>
+										<div class="kaart-back">
+											<img src="../img/ozil1.jpg" alt="ozil">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="rooster">
+								<div class="kaart" data-what="pepe">
+									<div class="kaart-in">
+										<div class="kaart-front">
+											<img src="../img/arsenal-goonery.jpg">
+										</div>
+										<div class="kaart-back">
+											<img src="../img/pepe1.jpg" alt="pepe">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="rooster">
+								<div class="kaart" data-what="ceballos">
+									<div class="kaart-in">
+										<div class="kaart-front">
+											<img src="../img/arsenal-goonery.jpg">
+										</div>
+										<div class="kaart-back">
+											<img src="../img/ceballos1.jpg" alt="ceballos">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="rooster">
+								<div class="kaart" data-what="torreira">
+									<div class="kaart-in">
+										<div class="kaart-front">
+											<img src="../img/arsenal-goonery.jpg">
+										</div>
+										<div class="kaart-back">
+											<img src="../img/torreira1.jpg" alt="torreira">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="rij">
+							<div class="rooster">
+								<div class="kaart" data-what="luiz">
+									<div class="kaart-in">
+										<div class="kaart-front">
+											<img src="../img/arsenal-goonery.jpg">
+										</div>
+										<div class="kaart-back">
+											<img src="../img/luiz1.jpg" alt="luiz">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="rooster">
+								<div class="kaart" data-what="ozil">
+									<div class="kaart-in">
+										<div class="kaart-front">
+											<img src="../img/arsenal-goonery.jpg">
+										</div>
+										<div class="kaart-back">
+											<img src="../img/ozil1.jpg" alt="ozil">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="rooster">
+								<div class="kaart" data-what="torreira">
+									<div class="kaart-in">
+										<div class="kaart-front">
+											<img src="../img/arsenal-goonery.jpg">
+										</div>
+										<div class="kaart-back">
+											<img src="../img/torreira1.jpg" alt="torreira">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="rooster">
+								<div class="kaart" data-what="lacazette">
+									<div class="kaart-in">
+										<div class="kaart-front">
+											<img src="../img/arsenal-goonery.jpg">
+										</div>
+										<div class="kaart-back">
+											<img src="../img/lacazette1.jpg" alt="lacazette">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="rij">
+							<div class="rooster">
+								<div class="kaart" data-what="aubameyang">
+									<div class="kaart-in">
+										<div class="kaart-front">
+											<img src="../img/arsenal-goonery.jpg">
+										</div>
+										<div class="kaart-back">
+											<img src="../img/aubameyang1.jpg" alt="aubameyang">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="rooster">
+								<div class="kaart" data-what="leno">
+									<div class="kaart-in">
+										<div class="kaart-front">
+											<img src="../img/arsenal-goonery.jpg">
+										</div>
+										<div class="kaart-back">
+											<img src="../img/leno1.jpg" alt="leno">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="rooster">
+								<div class="kaart" data-what="pepe">
+									<div class="kaart-in">
+										<div class="kaart-front">
+											<img src="../img/arsenal-goonery.jpg">
+										</div>
+										<div class="kaart-back">
+											<img src="../img/pepe1.jpg" alt="pepe">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="rooster">
+								<div class="kaart" data-what="leno">
+									<div class="kaart-in">
+										<div class="kaart-front">
+											<img src="../img/arsenal-goonery.jpg">
+										</div>
+										<div class="kaart-back">
+											<img src="../img/leno1.jpg" alt="leno">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="../js/goonery1.js"></script>
+</body>
+</html>
+						

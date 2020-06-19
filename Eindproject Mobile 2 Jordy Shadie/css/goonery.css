@@ -1,0 +1,226 @@
+/**
+* Goonery stylesheet
+* Author @ Jordy Shadie Mbombo
+*/
+
+main {
+  background-color: rgb(187, 172, 172);
+  padding-bottom: 5%;
+}
+
+.wrapper {
+  max-width: 100rem;
+  margin: auto;
+}
+
+header {
+  background-color: #500a0a;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+header h1 a {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.goonery {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+
+.goonery h2 {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  margin-bottom: 1rem;
+}
+
+.goonery p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  max-width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+button {
+  margin-top: 2rem;
+  margin-left: 21.5%;
+  background-color: #500a0a;
+  border-radius: 0.4rem;
+  padding: 1.2rem 4rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  transition: 200ms all ease-in-out;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: #000;
+  cursor: pointer;
+}
+
+.timer {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  width: 100%; height: 100%;
+}
+
+#spel.game {
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.kaart {
+  background-color: transparent;
+  width: 12rem;
+  height: 14rem;
+  margin-top: 0.5rem;
+  perspective: 500px;
+}
+
+.kaart-in {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.kaart.draai .kaart-in {
+  transform: rotateY(180deg);
+}
+
+.kaart-front, .kaart-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.kaart-back {
+  transform: rotateY(180deg);
+}
+
+.rooster_afbeeldingen {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.rooster {
+  cursor: pointer;
+  display: flex;
+}
+
+.rij {
+  justify-content: space-evenly;
+  display: flex;
+}
+
+@media (max-width: 41em) {
+  h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 0.3rem;
+  }
+
+  p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 0.3em;
+  }
+
+  .goonery {
+    text-align: center;
+  }
+
+  .kaart img {
+    width: 80%;
+  }
+
+  .kaart {
+    background-color: transparent;
+    width: 7rem;
+    height: 7rem;
+    perspective: 1000px;
+  }
+
+  .rooster_afbeeldingen {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .rooster {
+    width: 35%;
+    cursor: pointer;
+    display: block;
+  }
+
+  .div1{
+    width: 80%;
+  }
+
+  #spel.game {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .rij img {
+    max-width: 100%;
+    height: block;
+  }
+
+  .wrapper {
+    margin-bottom: 2rem;
+  }
+
+  button {
+    font-size: 0.7rem;
+    width: 26%;
+    height: 2rem;
+    margin: 0.3rem;
+    margin-top: 1rem;
+  }
+
+  div .timer {
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.3rem;;
+  }
+}
+
+

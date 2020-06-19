@@ -1,0 +1,149 @@
+/**
+* Main stylesheet for ArsenalZone
+* Author @ Jordy Shadie Mbombo
+*/
+
+body {
+  background-image: url(../img/gunners.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.wrapper {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #0303037c;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+header h1 a {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+.nav-style {
+  max-width: 100rem;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding-bottom: 0.3rem;
+}
+
+.nav-style ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+}
+
+.nav-style li a {
+  font-size: 1.3rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  transition: 200ms all ease-in-out;
+}
+.nav-style li a:hover {
+  color: #e50000d7;
+}
+
+.nav-style li + li {
+  margin-left: 2rem;
+}
+
+#search {
+  border: 0;
+  font-size: 1.3rem;
+  width: 15rem;
+  height: 2rem;
+  border-radius: 0.2rem;
+}
+
+/*=========================FOOTER============================*/
+footer {
+  background-color: #030303c5;
+  width: 100%;
+}
+
+footer small {
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+.footer-nav h5 a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #e50000d7;
+  font-family: "Rock Salt", cursive;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.footer-nav li a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.footer-nav li + li {
+  margin-left: 2rem;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.4rem;
+}
+
+.footer-social section {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.footer-social h5 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+}
+
+.footer-social ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  list-style: none;
+}
+
+.footer-social li a {
+  color: #ffffff;
+}
+
+.footer-social li + li {
+  margin-left: 1.3rem;
+}

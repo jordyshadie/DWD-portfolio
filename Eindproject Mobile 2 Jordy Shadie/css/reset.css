@@ -1,0 +1,31 @@
+/**
+ * Stylesheet used for all sites
+ *
+ * @author Rogier van der Linde <rogier.vanderlinde@kahosl.be>
+ *
+ */
+
+
+ html {
+	font-size: 0.625em;  /* set 1 rem = 16px * 0.625 = 10px */
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;  /*change the font-family*/ 
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;  /*added a font-weight for the titles*/
+}
+
+* {
+	box-sizing: border-box; /* width and height include paddings and borders */
+	margin: 0; /* wipe out browser differences */
+	padding: 0; /* wipe out browser differences */ 
+}
+
+img {
+	border: 0;
+	size: 100%;
+}
